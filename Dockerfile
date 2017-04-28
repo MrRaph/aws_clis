@@ -1,6 +1,6 @@
 FROM python:slim
 
-VOLUME "/root/.aws" "/root/.elasticbeanstalk"
+VOLUME "/root/.aws" "/root/.elasticbeanstalk" "/data"
 ADD ./help.sh /root/help.sh
 CMD "/root/help.sh"
 
